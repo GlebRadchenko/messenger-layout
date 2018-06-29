@@ -1,1 +1,1 @@
-# messenger-layout
+# Tool for layouting messages in UICollectionView
