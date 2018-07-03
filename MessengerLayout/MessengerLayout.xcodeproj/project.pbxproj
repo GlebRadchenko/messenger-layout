@@ -15,6 +15,8 @@
 		F7FDD3C820E62B4300C28136 /* MessengerKit.h in Headers */ = {isa = PBXBuildFile; fileRef = F7FDD3C620E62B4300C28136 /* MessengerKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F7FDD3D320E62B8B00C28136 /* MessengerKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F7FDD3C420E62B4300C28136 /* MessengerKit.framework */; };
 		F7FDD3D420E62B8B00C28136 /* MessengerKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F7FDD3C420E62B4300C28136 /* MessengerKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		F7FDD45720EB8CE700C28136 /* Debouncer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7FDD45620EB8CE700C28136 /* Debouncer.swift */; };
+		F7FDD45820EB8CE700C28136 /* Debouncer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7FDD45620EB8CE700C28136 /* Debouncer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +54,7 @@
 		F7FDD3C420E62B4300C28136 /* MessengerKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MessengerKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F7FDD3C620E62B4300C28136 /* MessengerKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MessengerKit.h; sourceTree = "<group>"; };
 		F7FDD3C720E62B4300C28136 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F7FDD45620EB8CE700C28136 /* Debouncer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Debouncer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +111,7 @@
 		F7FDD3C520E62B4300C28136 /* MessengerKit */ = {
 			isa = PBXGroup;
 			children = (
+				F7FDD45520EB8CD100C28136 /* Sources */,
 				F7FDD3C620E62B4300C28136 /* MessengerKit.h */,
 				F7FDD3C720E62B4300C28136 /* Info.plist */,
 			);
@@ -119,6 +123,14 @@
 			children = (
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F7FDD45520EB8CD100C28136 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				F7FDD45620EB8CE700C28136 /* Debouncer.swift */,
+			);
+			path = Sources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -187,6 +199,7 @@
 					};
 					F7FDD3C320E62B4300C28136 = {
 						CreatedOnToolsVersion = 9.4.1;
+						LastSwiftMigration = 0940;
 					};
 				};
 			};
@@ -236,6 +249,7 @@
 			files = (
 				F7D25B0620E6202800E89DBE /* ViewController.swift in Sources */,
 				F7D25B0420E6202800E89DBE /* AppDelegate.swift in Sources */,
+				F7FDD45720EB8CE700C28136 /* Debouncer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -243,6 +257,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F7FDD45820EB8CE700C28136 /* Debouncer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -393,6 +408,7 @@
 		F7D25B1320E6202B00E89DBE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 76RXYZCS9Y;
@@ -412,6 +428,7 @@
 		F7D25B1420E6202B00E89DBE /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 76RXYZCS9Y;
@@ -431,6 +448,7 @@
 		F7FDD3CA20E62B4300C28136 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -450,6 +468,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.messengerlayout.MessengerKit;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
@@ -460,6 +479,7 @@
 		F7FDD3CB20E62B4300C28136 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
