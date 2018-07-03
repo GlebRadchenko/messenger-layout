@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F705D1FD20EB8FD7006895AE /* Wrappers.swift in Sources */ = {isa = PBXBuildFile; fileRef = F705D1FC20EB8FD7006895AE /* Wrappers.swift */; };
+		F705D1FE20EB8FD7006895AE /* Wrappers.swift in Sources */ = {isa = PBXBuildFile; fileRef = F705D1FC20EB8FD7006895AE /* Wrappers.swift */; };
 		F7D25B0420E6202800E89DBE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7D25B0320E6202800E89DBE /* AppDelegate.swift */; };
 		F7D25B0620E6202800E89DBE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7D25B0520E6202800E89DBE /* ViewController.swift */; };
 		F7D25B0920E6202800E89DBE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F7D25B0720E6202800E89DBE /* Main.storyboard */; };
@@ -15,8 +17,8 @@
 		F7FDD3C820E62B4300C28136 /* MessengerKit.h in Headers */ = {isa = PBXBuildFile; fileRef = F7FDD3C620E62B4300C28136 /* MessengerKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F7FDD3D320E62B8B00C28136 /* MessengerKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F7FDD3C420E62B4300C28136 /* MessengerKit.framework */; };
 		F7FDD3D420E62B8B00C28136 /* MessengerKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F7FDD3C420E62B4300C28136 /* MessengerKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		F7FDD45720EB8CE700C28136 /* Debouncer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7FDD45620EB8CE700C28136 /* Debouncer.swift */; };
-		F7FDD45820EB8CE700C28136 /* Debouncer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7FDD45620EB8CE700C28136 /* Debouncer.swift */; };
+		F7FDD45720EB8CE700C28136 /* EventThrottler.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7FDD45620EB8CE700C28136 /* EventThrottler.swift */; };
+		F7FDD45820EB8CE700C28136 /* EventThrottler.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7FDD45620EB8CE700C28136 /* EventThrottler.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +46,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		F705D1FC20EB8FD7006895AE /* Wrappers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Wrappers.swift; sourceTree = "<group>"; };
 		F7D25B0020E6202800E89DBE /* MessengerLayout.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MessengerLayout.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F7D25B0320E6202800E89DBE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F7D25B0520E6202800E89DBE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -54,7 +57,7 @@
 		F7FDD3C420E62B4300C28136 /* MessengerKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MessengerKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F7FDD3C620E62B4300C28136 /* MessengerKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MessengerKit.h; sourceTree = "<group>"; };
 		F7FDD3C720E62B4300C28136 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F7FDD45620EB8CE700C28136 /* Debouncer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Debouncer.swift; sourceTree = "<group>"; };
+		F7FDD45620EB8CE700C28136 /* EventThrottler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventThrottler.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,7 +131,8 @@
 		F7FDD45520EB8CD100C28136 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				F7FDD45620EB8CE700C28136 /* Debouncer.swift */,
+				F7FDD45620EB8CE700C28136 /* EventThrottler.swift */,
+				F705D1FC20EB8FD7006895AE /* Wrappers.swift */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -248,8 +252,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				F7D25B0620E6202800E89DBE /* ViewController.swift in Sources */,
+				F705D1FD20EB8FD7006895AE /* Wrappers.swift in Sources */,
 				F7D25B0420E6202800E89DBE /* AppDelegate.swift in Sources */,
-				F7FDD45720EB8CE700C28136 /* Debouncer.swift in Sources */,
+				F7FDD45720EB8CE700C28136 /* EventThrottler.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -257,7 +262,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F7FDD45820EB8CE700C28136 /* Debouncer.swift in Sources */,
+				F7FDD45820EB8CE700C28136 /* EventThrottler.swift in Sources */,
+				F705D1FE20EB8FD7006895AE /* Wrappers.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

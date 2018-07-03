@@ -1,5 +1,5 @@
 //
-//  Debouncer.swift
+//  EventThrottler.swift
 //  MessengerLayout
 //
 //  Created by Gleb Radchenko on 7/3/18.
@@ -8,8 +8,8 @@
 
 import Foundation
 
-open class Debouncer<E> {
-    public fileprivate(set) var queue = DispatchQueue(label: "debouncer-queue")
+open class EventThrottler<E> {
+    public fileprivate(set) var queue = DispatchQueue(label: "throttle-queue")
     fileprivate var _elements: [E] = []
     
     fileprivate let runningLock = NSLock()
