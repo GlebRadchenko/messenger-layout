@@ -9,11 +9,14 @@
 /* Begin PBXBuildFile section */
 		F705D1FD20EB8FD7006895AE /* Wrappers.swift in Sources */ = {isa = PBXBuildFile; fileRef = F705D1FC20EB8FD7006895AE /* Wrappers.swift */; };
 		F705D1FE20EB8FD7006895AE /* Wrappers.swift in Sources */ = {isa = PBXBuildFile; fileRef = F705D1FC20EB8FD7006895AE /* Wrappers.swift */; };
+		F70BE2EE20F4B5F500597F45 /* Diffable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F70BE2ED20F4B5F500597F45 /* Diffable.swift */; };
+		F70BE2EF20F4B5F500597F45 /* Diffable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F70BE2ED20F4B5F500597F45 /* Diffable.swift */; };
 		F7D25B0420E6202800E89DBE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7D25B0320E6202800E89DBE /* AppDelegate.swift */; };
 		F7D25B0620E6202800E89DBE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7D25B0520E6202800E89DBE /* ViewController.swift */; };
 		F7D25B0920E6202800E89DBE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F7D25B0720E6202800E89DBE /* Main.storyboard */; };
 		F7D25B0B20E6202B00E89DBE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F7D25B0A20E6202B00E89DBE /* Assets.xcassets */; };
 		F7D25B0E20E6202B00E89DBE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F7D25B0C20E6202B00E89DBE /* LaunchScreen.storyboard */; };
+		F7EC47C420F4CCD600BFAAF8 /* TestDiffable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7EC47C320F4CCD600BFAAF8 /* TestDiffable.swift */; };
 		F7FDD3C820E62B4300C28136 /* MessengerKit.h in Headers */ = {isa = PBXBuildFile; fileRef = F7FDD3C620E62B4300C28136 /* MessengerKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F7FDD3D320E62B8B00C28136 /* MessengerKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F7FDD3C420E62B4300C28136 /* MessengerKit.framework */; };
 		F7FDD3D420E62B8B00C28136 /* MessengerKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F7FDD3C420E62B4300C28136 /* MessengerKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -47,6 +50,7 @@
 
 /* Begin PBXFileReference section */
 		F705D1FC20EB8FD7006895AE /* Wrappers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Wrappers.swift; sourceTree = "<group>"; };
+		F70BE2ED20F4B5F500597F45 /* Diffable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Diffable.swift; sourceTree = "<group>"; };
 		F7D25B0020E6202800E89DBE /* MessengerLayout.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MessengerLayout.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F7D25B0320E6202800E89DBE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F7D25B0520E6202800E89DBE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -54,6 +58,7 @@
 		F7D25B0A20E6202B00E89DBE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F7D25B0D20E6202B00E89DBE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F7D25B0F20E6202B00E89DBE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F7EC47C320F4CCD600BFAAF8 /* TestDiffable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestDiffable.swift; sourceTree = "<group>"; };
 		F7FDD3C420E62B4300C28136 /* MessengerKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MessengerKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F7FDD3C620E62B4300C28136 /* MessengerKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MessengerKit.h; sourceTree = "<group>"; };
 		F7FDD3C720E62B4300C28136 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -107,6 +112,7 @@
 				F7D25B0A20E6202B00E89DBE /* Assets.xcassets */,
 				F7D25B0C20E6202B00E89DBE /* LaunchScreen.storyboard */,
 				F7D25B0F20E6202B00E89DBE /* Info.plist */,
+				F7EC47C320F4CCD600BFAAF8 /* TestDiffable.swift */,
 			);
 			path = MessengerLayout;
 			sourceTree = "<group>";
@@ -133,6 +139,7 @@
 			children = (
 				F7FDD45620EB8CE700C28136 /* EventThrottler.swift */,
 				F705D1FC20EB8FD7006895AE /* Wrappers.swift */,
+				F70BE2ED20F4B5F500597F45 /* Diffable.swift */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -251,7 +258,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F7EC47C420F4CCD600BFAAF8 /* TestDiffable.swift in Sources */,
 				F7D25B0620E6202800E89DBE /* ViewController.swift in Sources */,
+				F70BE2EE20F4B5F500597F45 /* Diffable.swift in Sources */,
 				F705D1FD20EB8FD7006895AE /* Wrappers.swift in Sources */,
 				F7D25B0420E6202800E89DBE /* AppDelegate.swift in Sources */,
 				F7FDD45720EB8CE700C28136 /* EventThrottler.swift in Sources */,
@@ -262,6 +271,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F70BE2EF20F4B5F500597F45 /* Diffable.swift in Sources */,
 				F7FDD45820EB8CE700C28136 /* EventThrottler.swift in Sources */,
 				F705D1FE20EB8FD7006895AE /* Wrappers.swift in Sources */,
 			);
